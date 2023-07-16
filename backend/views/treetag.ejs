@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+   *{
+    font-family: "Poppins", sans-serif;
+   }
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=url],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #014682;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #014682;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 450px;
+        margin: auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <h3>Fill the details about the tree</h3>
+
+    <div>
+        <form action="/tree/location" method="post">
+            <label for="fname">Tree Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Name of the Tree..">
+
+            <label for="lname">Age of the Tree</label>
+            <input type="text" id="lname" name="lastname" placeholder="Age of the tree..">
+
+            <label for="Image">Provide the Drive Link for the Image of Tree</label>
+            <input type="url" id="Image" name="Image" placeholder="Paste the Link..">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
